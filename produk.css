@@ -1,0 +1,317 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        background-color: rgb(49, 90, 68);
+        padding: 30px 0px 20px 0px; 
+    }
+    
+    .navbar-nav .nav-link {
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        transition: 0.3s;
+        margin: 0px 20px 10px 20px;
+        padding: 0px 20px;
+        
+    }
+    
+    .navbar-nav .nav-link:hover {
+        transform: scale(1.1);
+        background-color: rgb(151, 202, 158);
+        border-radius: 5px;
+    }
+    
+    .navbar-toggler-icon {
+        background: none;
+        width: 30px;
+        height: 24px;
+        position: relative;
+    }   
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after,
+    .navbar-toggler-icon div {
+        content: '';
+        display: block;
+        background-color: white;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    .navbar-toggler-icon::before {
+        top: 0;
+    }
+    
+    .navbar-toggler-icon div {
+        top: 50%;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: 0;
+    }
+
+    /* Landing Page Video Background */
+    .video-landingpage {
+        height: 100vh;
+    }
+
+    .video-container video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        filter: brightness(40%);
+    }
+
+    /* Hero Section */
+    .hero-container {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        z-index: 10;
+    }
+
+    .hero-content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px;
+        color: white;
+    }
+
+    .text-section {
+        flex: 10;
+        margin-bottom: 50px;
+    }
+
+    .text-section h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: calc(0.5s);
+    }
+
+    .text-section h1:hover {
+        transform: scale(1.1);
+        color: rgb(151, 202, 158);
+        
+    }
+
+    .text-section p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center  ;
+    }
+
+
+
+    .text2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    .text2 img {
+        width: 400px;
+        max-width: 600px;
+        height: auto;
+        margin: 0 20px;
+        border-radius: 10px;
+    }
+
+    .text2 .textBox {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .text2 .textBox h2 {
+        color: rgb(110, 153, 101);
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .text2 .textBox p {
+        color: rgb(0, 0, 0);
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    .text2 .textBox a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: rgb(0, 0, 0);
+        border-radius: 40px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+
+    /* best seller */
+
+    .card-body{
+        background-color: #e9ecef;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .card-img-overlay {
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+
+    .position-relative:hover .card-img-overlay {
+        opacity: 0.8;
+    }
+
+
+    .menu {
+        margin-top: 100px;
+        color: rgb(63, 141, 102);
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration-line: underline;
+    }
+
+    .cards-img {
+        height: 200px;
+        object-fit: cover;
+        
+    }
+
+    .cards {
+        transition: calc(0.5s);
+        border: 0.01px solid black;  
+    }
+
+    .cards:hover{
+        transform: scale(1.03);
+    }
+
+
+
+    /* footer */
+    .footer {
+        text-align: center;
+    }
+    .footer a {
+        color: #6c757d;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    .social-icons {
+        text-align: center;
+        margin: 20px 0px 10px 0px ; 
+    }
+    .social-icons a {
+        color: #6c757d;
+        margin: 0 10px; 
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: #007bff;
+    }
+    
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .hero-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-section h1 {
+            font-size: 29px;
+        }
+
+        .text-section p {
+            font-size: 15px;
+        }
+
+        .text-section {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .image-section {
+            max-width: 450px;
+            margin-bottom: 20px;
+        }
+
+        .text2 .textBox h2 {
+            text-align: center  ;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        .hero-content {
+            padding: 10px;
+        }
+
+        .text-section h1 {
+            font-size: 30px;
+        }
+
+        .text-section p {
+            font-size: 15px;
+        }
+
+        .text2 {
+            flex-direction: column-reverse;
+        }
+
+        .text2 img {
+            width: 300px;
+            max-width: 400px;
+        }
+
+        .text2 .textBox h2 {
+            font-size: 1em;
+            text-align: center  ;
+        }
+
+        .text2 .textBox p {
+            font-size: 0.8em;
+        }
+
+
+    }

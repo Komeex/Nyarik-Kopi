@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: rgb(49, 90, 68);
+    padding: 30px 0px 20px 0px; 
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.3s;
+    margin: 0px 20px 10px 20px;
+    padding: 0px 20px;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    background-color: rgb(151, 202, 158);
+    border-radius: 5px;
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler-icon {
+    background: none;
+    width: 30px;
+    height: 24px;
+    position: relative;
+}   
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon div {
+    top: 50%;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+}
+
+
+
+/* Video background styling */
+.vid-back {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+.contact {
+    z-index: 1;
+    padding: 40px 10%;
+    min-height: 100vh;
+}
+
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.contact-form h1 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+span {
+    color: rgb(75, 167, 113);
+}
+
+.contact-form p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: aliceblue;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background: rgb(78, 151, 106);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: ease .20s;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+}
+
+.contact-form .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Google style  */
+.map-embed {
+    margin-top: 205px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 570px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* Footer */
+
+.footer {
+    color: white;
+    text-align: center;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
